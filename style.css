@@ -1,0 +1,99 @@
+* {
+    font-family: "Verdana", sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+html {
+    padding: 3rem;
+    background-color: #212123;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EFEFEF;
+}
+
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+
+h1.encurtamento-text {
+    animation: encurtamentoDeTexto 2s linear infinite;
+}
+
+@keyframes encurtamentoDeTexto {
+    0% {
+        letter-spacing: 2rem;
+        opacity: 0;
+    }
+
+    50% {
+        letter-spacing: 1rem;
+        opacity: 0.5;
+    }
+
+    100% {
+        letter-spacing: 0rem;
+        opacity: 1;
+    }
+}
+
+h1.fechamento-text {
+    animation: espacamentoFechamentoDeTexto 3s linear infinite;
+}
+
+h1.espacamento-text {
+    animation: espacamentoDeTexto 2s linear infinite;
+}
+
+@keyframes espacamentoDeTexto {
+    0% {
+        letter-spacing: 0rem;
+        opacity: 1;
+    }
+
+    50% {
+        letter-spacing: 1rem;
+        opacity: 0.5;
+    }
+
+    100% {
+        letter-spacing: 2rem;
+        opacity: 0;
+    }
+}
+
+@keyframes espacamentoFechamentoDeTexto {
+    0% {
+        letter-spacing: 0;
+    }
+
+    25% {
+        letter-spacing: 1rem;
+        opacity: 0.5;
+    }
+
+    50% {
+        letter-spacing: 2rem;
+        opacity: 0;
+    }
+
+    75% {
+        letter-spacing: 1rem;
+        opacity: 0.5;
+    }
+
+    100% {
+        letter-spacing: 0rem;
+        opacity: 1;
+    }
+}
